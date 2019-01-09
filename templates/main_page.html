@@ -12,26 +12,31 @@
   </head>
   <body>
     <div id="banner" class="container">
-      <h1 class="display-4">Hello, world!</h1>
+      <h1 class="display-4">Marvel Superhero Generator</h1>
     </div>
     <div class="container">
       <form action="{{ url_for('process_inputs') }}" method="post">
         <div class="form-group">
-          <label for="input_name">First Name</label>
-          <input type="text" class="form-control" name="input_name"  id="input_name" placeholder="Fred Flintstone">
+          <label for="input_name">What is your favorite color?</label>
+          <input type="text" class="form-control" name="input_name"  id="input_name" placeholder="Red">
         </div>
         <div class="form-group">
-          <label for="input_dropdown">Example select</label>
+          <label for="input_dropdown">What is your favorite superpower?</label>
           <select class="form-control" name="input_dropdown" id="input_dropdown">
-            <option>1 fish</option>
-            <option>2 fish</option>
-            <option>red fish</option>
-            <option>the spanish inquisition</option>
-            <option>blue fish</option>
+            <option>Flight</option>
+            <option>Super Speed</option>
+            <option>Super Strength</option>
+            <option>Power Stealing</option>
+            <option>Invisibility</option>
+            <option>Heat Vision</option>
+            <option>Healing Factor</option>
+            <option>Animal Control</option>
+            <option>Shapeshifting</option>
+            <option>Teleportation</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="input_select">Example multiple select</label>
+          <label for="input_select">Example select</label>
           <select multiple class="form-control" name="input_select" id="input_select">
             <option>1</option>
             <option>2</option>
