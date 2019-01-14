@@ -17,8 +17,8 @@
     <div class="container">
       <form action="{{ url_for('process_inputs') }}" method="post">
         <div class="form-group">
-          <label for="input_name">What is your favorite color?</label>
-          <input type="text" class="form-control" name="input_name"  id="input_name" placeholder="Red">
+          <label for="input_name">What is your name?</label>
+          <input type="text" class="form-control" name="input_name"  id="input_name" placeholder="Jim">
         </div>
         <div class="form-group">
           <label for="input_dropdown">What is your favorite superpower?</label>
@@ -44,7 +44,16 @@
             <option>4</option>
             <option>5</option>
           </select>
+          </div>
+       <!-- <div class="form-group">
+          <label for="input_dropdownxo">What do you want to be?</label>
+          <select class="form-control" name="input_dropdownxo" id="input_dropdownxo">
+            <option>Human</option>
+            <option>Mutant</option>
+            <option>Alien</option>
+          </select>
         </div>
+         -->
         <div class="form-group">
           <label for="input_freeform">Example textarea</label>
           <textarea class="form-control" name="input_freeform" id="input_freeform" rows="3"></textarea>
