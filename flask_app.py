@@ -10,7 +10,7 @@ def main():
 def process_inputs():
     name = request.form.get('input_name', '')
     if name == "":
-        return render_template
+        return render_template("main_page.html", output="Bro enter a name please")
     dropdown = request.form.get('input_dropdown', '')
     select = request.form.get('input_select', '')
     freeform = request.form.get('input_freeform', '')
